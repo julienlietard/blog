@@ -27,6 +27,10 @@
   border: none;
   padding: 0.3rem 1rem;
   border-radius: 5px;
-  background-color: #0f52ba;
+  background-color: var(--color-bg);
   color: #fff;
+}
+
+.croix {
+  color: red;
 }
