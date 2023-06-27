@@ -1,23 +1,52 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
 .home-header {
   text-align: center;
 }
 
-.home-header h2 {
-  color: #0080ff;
-  font-size: 2rem;
+@keyframes clignoter {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-.home-header h1 {
-  font-size: 3rem;
-  color: #0f52ba;
-  margin-bottom: 1rem;
+.cursor {
+  display: inline-block;
+  animation: clignoter 1s infinite;
+  font-size: 1rem;
+  color: var(--color-primary);
 }
 
-.home-header h1 span {
-  color: #b0c4de;
+.illustration {
+  position: absolute;
+  margin-top: 7vh;
+  left: 50%;
+  width: 30rem;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.home-header p {
-  color: #a9a9a9;
-  font-weight: 500;
+#scrolldown {
+  margin-top: 2rem;
+}
+
+/* =========== POUR LES TABLETTES =========== */
+@media screen and (max-width: 1224px){
+  .illustration {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+/* =========== POUR LES TELEPHONES =========== */
+@media screen and (max-width: 600px) {
+  .illustration {
+    height: 30%;
+    width: 30%;
+  }
 }
