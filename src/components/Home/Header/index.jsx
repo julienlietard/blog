@@ -21,6 +21,7 @@ const Header = () => (
         <br/>
         <a href="https://www.julienlietard.fr">Visiter mon portfolio</a>
     </h5>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a href={null} className="btn btn-primary" id="scrolldown" onClick={scrollToBottom}>Parcourir mes articles <AiFillCaretDown/></a>
     <div className="illustration">
         <img src={scientists} alt="illustration"/>
